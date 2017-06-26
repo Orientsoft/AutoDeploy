@@ -1,0 +1,14 @@
+{
+    "port": 9999,
+    "sites": [
+        {
+            "url": "/deploy",
+            "workingDir": "/home/voyager/romulan-server",
+            "scripts": [
+                "pkill python",
+                "git pull",
+                "./start.sh"
+            ]
+        }
+    ]
+}
